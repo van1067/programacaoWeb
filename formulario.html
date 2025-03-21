@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="logo">
+            <img id="iconeWeb" src="images/iconeWeb.png" alt="Ícone da Web">
+            <p id="textoLogo">Progamação.WEB</p>
+        </div>
+        <div id="acessoRapido">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="formulario.html">Inscreva-se</a>
+        </div>
+    </div>
+    <div id="conteudoFormulario">
+        <h1>Inscrição</h1>
+        <form action="" method="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <label>Gênero:</label>
+            <div class="opcoes">
+                <label for="mulher">
+                    Mulher <input type="radio" id="mulher" name="genero" value="mulher" required>
+                </label>
+                
+                <label for="homem">
+                    Homem <input type="radio" id="homem" name="genero" value="homem" required>
+                </label>
+            </div>
+            
+            <label>Tecnologia de interesse:</label>
+            <div class="opcoes">
+                <label for="html">
+                    HTML <input type="checkbox" id="html" name="tecnologia" value="HTML">
+                </label>
+                <label for="css">
+                    CSS <input type="checkbox" id="css" name="tecnologia" value="CSS">
+                </label>
+                
+            </div>
+        
+            <button type="submit">Enviar</button>
+        </form>        
+    </div>
+</body>
+</html>
